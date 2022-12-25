@@ -1,4 +1,4 @@
-#include "datatypes.h"
+#include "../src/datatypes.h"
 #include <iostream>
 
 int main()
