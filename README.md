@@ -33,7 +33,7 @@ int main()
 <br>
 
 #### For build text an example, run the commands:
-1. #### clone the repo
+1. #### Clone the repo
 
 2. #### And then:
 
