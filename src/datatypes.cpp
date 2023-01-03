@@ -1,56 +1,64 @@
 #include "datatypes.h"
 #include <iostream>
 
+/**
+ * @version 0.1
+ * @author Vladimir Tolstov (vladimir.tolstov@selfip.ru)
+ * @date 2023-01-03
+ * @copyright Copyright (c) 2023
+*/
+
 using namespace DataTypes;
 
-Pair::Pair(int a = 0, int b = 0)
+/* Vector2El - (num1, num2) */
+Vector2El::Vector2El(int a = 0, int b = 0)
 {
     match.x = a;
     match.y = b;
 };
 
-pair Pair::get()
+vector2el Vector2El::get()
 {
     return match;
 };
 
-void Pair::set(int a = 0, int b = 0)
+void Vector2El::set(int a = 0, int b = 0)
 {
     match.x = a;
     match.y = b;
 };
 
-int Pair::sum()
+int Vector2El::sum()
 {
     return match.x + match.y;
 };
 
-int Pair::fminuss()
+int Vector2El::fminuss()
 {
     return match.x - match.y;
 };
 
-int Pair::sminusf()
+int Vector2El::sminusf()
 {
     return match.y - match.x;
 };
 
-int Pair::multi()
+int Vector2El::multi()
 {
     return match.x * match.y;
 };
 
-int Pair::fdivides()
+int Vector2El::fdivides()
 {
     return match.x / match.y;
 };
 
-int Pair::sdividef()
+int Vector2El::sdividef()
 {
     return match.y / match.x;
 };
 
-int Pair::power()
+int Vector2El::power()
 {
     int result = 1;
 
@@ -60,4 +68,34 @@ int Pair::power()
     }
 
     return result;
+};
+
+/* Vector3El - (num1, num2, num3) */
+Vector3El::Vector3El(int a = 0, int b = 0, int c = 0)
+{
+    match.x = a;
+    match.y = b;
+    match.z = c;
+};
+
+vector3el Vector3El::get()
+{
+    return match;
+};
+
+void Vector3El::set(int a = 0, int b = 0, int c = 0)
+{
+    match.x = a;
+    match.y = b;
+    match.z = c;
+};
+
+int Vector3El::sum()
+{
+    return match.x + match.y + match.z;
+};
+
+int Vector3El::multi()
+{
+    return match.x * match.y * match.z;
 };
