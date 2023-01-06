@@ -1,7 +1,8 @@
 # C++ DataTypes namespace
 
 ### List of data types:
-* Pairs
+* Vector of 2 elements
+* Vector of 3 elements
 
 ## Example of using
 ```cpp
