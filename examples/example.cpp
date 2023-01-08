@@ -3,6 +3,7 @@
 
 int main()
 {
+    int n = 10;
     // creating vector of 2 elements and vector of 3 elements
     DataTypes::Vector2El *vec2el = new DataTypes::Vector2El(0, 0);
     DataTypes::Vector3El *vec3el = new DataTypes::Vector3El(0, 0, 0);
@@ -28,17 +29,19 @@ int main()
     vec2el->set(x1, y1);
     vec3el->set(x2, y2, z2);
 
-    // output sum of elements in vector of 2 elements
-    std::cout << "-vec2el- SUM: " << vec2el->sum() << std::endl;
-    // output multiply of elements in vector of 2 elements
-    std::cout << "-vec2el- MULTIPLY: " << vec2el->multi() << std::endl;
-    // output power of elements in vector of 2 elements
-    std::cout << "-vec2el- POWER: " << vec2el->power() << std::endl;
+    
+    DataTypes::Vector2El *updatedvec2el = new DataTypes::Vector2El(vec3el->rmlastel().x, vec3el->rmlastel().y);
+    DataTypes::Vector3El *updatedvec3el = new DataTypes::Vector3El(vec2el->addel(n).x, vec2el->addel(n).y, vec2el->addel(n).z);
 
-    // output sum of elements in vector of 3 elements
-    std::cout << "-vec3el- SUM: " << vec3el->sum() << std::endl;
-    // output multiply of elements in vector of 3 elements
-    std::cout << "-vec3el- MULTIPLY: " << vec3el->multi() << std::endl;
+    std::cout << "|=======================================================|" << std::endl;
+    std::cout << "| Vector3El:" << std::endl;
+    std::cout << "x: " << updatedvec3el->get().x << std::endl;
+    std::cout << "y: " << updatedvec3el->get().y << std::endl;
+    std::cout << "z: " << updatedvec3el->get().z << std::endl;
+    std::cout << "| Vector2El:" << std::endl;
+    std::cout << "x: " << updatedvec2el->get().x << std::endl;
+    std::cout << "y: " << updatedvec2el->get().y << std::endl;
+    std::cout << "|=======================================================|" << std::endl;
 
     return 0;
 };

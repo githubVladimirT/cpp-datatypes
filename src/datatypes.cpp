@@ -70,6 +70,16 @@ int Vector2El::power()
     return result;
 };
 
+vector3el Vector2El::addel(int n)
+{
+    vector3el match3el;
+    match3el.x = match.x;
+    match3el.y = match.y;
+    match3el.z = n;
+
+    return match3el;
+};
+
 /* Vector3El - (num1, num2, num3) */
 Vector3El::Vector3El(int a = 0, int b = 0, int c = 0)
 {
@@ -98,4 +108,13 @@ int Vector3El::sum()
 int Vector3El::multi()
 {
     return match.x * match.y * match.z;
+};
+
+vector2el Vector3El::rmlastel()
+{
+    vector2el match2el;
+    match2el.x = match.x;
+    match2el.y = match.y;
+
+    return match2el;
 };

@@ -11,12 +11,19 @@
 namespace DataTypes
 {
 
-    /* Vector2El - (num1, num2) */
     struct vector2el
     {
         int x;
         int y;
     };
+    struct vector3el
+    {
+        int x;
+        int y;
+        int z;
+    };
+
+    /* Vector2El - (num1, num2) */
     class Vector2El
     {
     private:
@@ -33,15 +40,10 @@ namespace DataTypes
         int fdivides();
         int sdividef();
         int power();
+        vector3el addel(int n);
     };
 
     /* Vector3El - (num1, num2, num3) */
-    struct vector3el
-    {
-        int x;
-        int y;
-        int z;
-    };
     class Vector3El
     {
     private:
@@ -53,6 +55,7 @@ namespace DataTypes
         void set(int a, int b, int c);
         int sum();
         int multi();
+        vector2el rmlastel();
     };
 };
 
