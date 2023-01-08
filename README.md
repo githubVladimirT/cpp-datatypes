@@ -58,7 +58,7 @@ int main()
 
 <br>
 
-#### For build text an example, run the commands:
+#### For build an example, run the commands:
 1. #### Clone the repo
 
 2. #### And then:
